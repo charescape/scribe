@@ -45,6 +45,7 @@
 @endif
 
     <script src="{{ u::getVersionedAsset($assetPathPrefix.'js/theme-default.js') }}"></script>
+    <script src="{{ u::getVersionedAsset($assetPathPrefix.'js/highlightjs-curl.dist.curl.min.js') }}"></script>
 
 </head>
 
