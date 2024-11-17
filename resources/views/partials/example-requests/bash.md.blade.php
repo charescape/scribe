@@ -2,7 +2,7 @@
     use Knuckles\Scribe\Tools\WritingUtils as u;
     /** @var  Knuckles\Camel\Output\OutputEndpointData $endpoint */
 @endphp
-```bash
+```curl
 curl --request {{$endpoint->httpMethods[0]}} \
     {{$endpoint->httpMethods[0] == 'GET' ? '--get ' : ''}}"{!! rtrim($baseUrl, '/') !!}/{{ ltrim($endpoint->boundUri, '/') }}@if(count($endpoint->cleanQueryParameters))?{!! u::printQueryParamsAsString($endpoint->cleanQueryParameters) !!}@endif"@if(count($endpoint->headers)) \
 @foreach($endpoint->headers as $header => $value)
