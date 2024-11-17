@@ -247,8 +247,8 @@ html {
 
 .content code,
 .content pre {
-    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    font-size: 14px;
+    font-family: "Source Code Pro", "Noto Sans SC", Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    font-size: 16px;
     line-height: 1.5
 }
 
@@ -408,8 +408,8 @@ html {
     bottom: 0;
     width: 230px;
     background-color: #393939;
-    font-size: 13px;
-    font-weight: 700
+    font-size: 15px;
+    font-weight: 500
 }
 
 .tocify-wrapper .lang-selector {
@@ -532,7 +532,7 @@ html {
 
 .tocify-wrapper .tocify-subheader .tocify-item>a {
     padding-left: 25px;
-    font-size: 12px
+    font-size: 15px
 }
 
 .tocify-wrapper .tocify-subheader .tocify-item.level-3>a {
