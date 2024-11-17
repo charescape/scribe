@@ -143,6 +143,7 @@ class HtmlWriter
             "postman_collection_url" => $postmanCollectionUrl ?? null,
             "openapi_spec_url" => $openApiSpecUrl ?? null,
             'links' => array_merge($links, ['<a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a>']),
+            'links' => array_merge($links, []),
         ];
     }
 
