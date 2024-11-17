@@ -29,7 +29,7 @@
         @foreach($headings as $h1)
             <ul id="tocify-header-{{ $h1['slug'] }}" class="tocify-header">
                 <li class="tocify-item level-1" data-unique="{!! $h1['slug'] !!}">
-                    <a href="#{!! $h1['slug'] !!}">{!! $h1['name'] !!}</a>
+                    <a href="#{!! $h1['slug'] !!}" style="color: orange;">{!! $h1['name'] !!}</a>
                 </li>
                 @if(count($h1['subheadings']) > 0)
                     <ul id="tocify-subheader-{!! $h1['slug'] !!}" class="tocify-subheader">
