@@ -85,6 +85,7 @@ class HtmlWriter
             "{$assetsFolder}/css/theme-$theme.style.css" => ["$destinationFolder/css/", "theme-$theme.style.css"],
             "{$assetsFolder}/css/theme-$theme.print.css" => ["$destinationFolder/css/", "theme-$theme.print.css"],
             "{$assetsFolder}/js/theme-$theme.js" => ["$destinationFolder/js/", WritingUtils::getVersionedAsset("theme-$theme.js")],
+            "{$assetsFolder}/js/highlightjs-curl.dist.curl.min.js" => ["$destinationFolder/js/", WritingUtils::getVersionedAsset("highlightjs-curl.dist.curl.min.js")],
         ];
 
         if ($this->config->get('try_it_out.enabled', true)) {
