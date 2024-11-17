@@ -10,14 +10,30 @@
     <title>{!! $metadata['title'] !!}</title>
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{!! $assetPathPrefix !!}css/theme-default.style.css" media="screen">
     <link rel="stylesheet" href="{!! $assetPathPrefix !!}css/theme-default.print.css" media="print">
 
     <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/lodash.js/4.17.21/lodash.min.js"></script>
 
-    <link rel="stylesheet"
-          href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/11.4.0/styles/github-dark.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/github-markdown-css/5.6.1/github-markdown-light.min.css">
+    <style>
+        .markdown-body {
+            font-family: inherit;
+            min-height: inherit;
+            background-color: transparent;
+            font-size: inherit;
+        }
+        .markdown-body tt,
+        .markdown-body pre,
+        .markdown-body code,
+        .markdown-body samp {
+            font-family: "Source Code Pro", "Noto Sans SC", sans-serif;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/11.4.0/styles/github-dark.min.css">
     <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/11.4.0/highlight.min.js"></script>
     <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/11.4.0/languages/javascript.min.js"></script>
     <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/11.4.0/languages/php.min.js"></script>

@@ -68,6 +68,7 @@
       data-hasfiles="{{ $endpoint->hasFiles() ? 1 : 0 }}"
       data-isarraybody="{{ $endpoint->isArrayBody() ? 1 : 0 }}"
       autocomplete="off"
+      class="markdown-body"
       onsubmit="event.preventDefault(); executeTryOut('{{ $endpoint->endpointId() }}', this);">
     <h3>
         {{ u::trans("scribe::endpoint.request") }}&nbsp;&nbsp;&nbsp;
@@ -98,7 +99,7 @@
         </p>
     @endforeach
     @if(count($endpoint->headers))
-        <h4 class="fancy-heading-panel"><b>{{ u::trans("scribe::endpoint.headers") }}</b></h4>
+        <h4 class="fancy-heading-panel" style="font-size: 14px;"><b>{{ u::trans("scribe::endpoint.headers") }}</b></h4>
         @foreach($endpoint->headers as $name => $example)
             <?php
                 $htmlOptions = [];
@@ -123,7 +124,7 @@
         @endforeach
     @endif
     @if(count($endpoint->urlParameters))
-        <h4 class="fancy-heading-panel"><b>{{ u::trans("scribe::endpoint.url_parameters") }}</b></h4>
+        <h4 class="fancy-heading-panel" style="font-size: 14px;"><b>{{ u::trans("scribe::endpoint.url_parameters") }}</b></h4>
         @foreach($endpoint->urlParameters as $attribute => $parameter)
             <div style="padding-left: 28px; clear: unset;">
                 @component('scribe::components.field-details', [
@@ -142,7 +143,7 @@
         @endforeach
     @endif
     @if(count($endpoint->queryParameters))
-        <h4 class="fancy-heading-panel"><b>{{ u::trans("scribe::endpoint.query_parameters") }}</b></h4>
+        <h4 class="fancy-heading-panel" style="font-size: 14px;"><b>{{ u::trans("scribe::endpoint.query_parameters") }}</b></h4>
         @foreach($endpoint->queryParameters as $attribute => $parameter)
                 <?php
                 $htmlOptions = [];
@@ -168,7 +169,7 @@
         @endforeach
     @endif
     @if(count($endpoint->nestedBodyParameters))
-        <h4 class="fancy-heading-panel"><b>{{ u::trans("scribe::endpoint.body_parameters") }}</b></h4>
+        <h4 class="fancy-heading-panel" style="font-size: 14px;"><b>{{ u::trans("scribe::endpoint.body_parameters") }}</b></h4>
         <x-scribe::nested-fields
                 :fields="$endpoint->nestedBodyParameters" :endpointId="$endpoint->endpointId()"
         />
@@ -177,7 +178,7 @@
 
 @if(count($endpoint->responseFields))
     <h3>{{ u::trans("scribe::endpoint.response") }}</h3>
-    <h4 class="fancy-heading-panel"><b>{{ u::trans("scribe::endpoint.response_fields") }}</b></h4>
+    <h4 class="fancy-heading-panel" style="font-size: 14px;"><b>{{ u::trans("scribe::endpoint.response_fields") }}</b></h4>
     <x-scribe::nested-fields
             :fields="$endpoint->nestedResponseFields" :endpointId="$endpoint->endpointId()"
             :isInput="false"
