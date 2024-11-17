@@ -17,7 +17,7 @@
     <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/lodash.js/4.17.21/lodash.min.js"></script>
 
     <link rel="stylesheet"
-          href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/11.4.0/styles/obsidian.min.css">
+          href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/11.4.0/styles/github.min.css">
     <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/11.4.0/highlight.min.js"></script>
 
     <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/jets/0.14.1/jets.min.js"></script>
