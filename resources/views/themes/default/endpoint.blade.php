@@ -71,7 +71,6 @@
       class="markdown-body"
       onsubmit="event.preventDefault(); executeTryOut('{{ $endpoint->endpointId() }}', this);">
     <h3>
-        {{ u::trans("scribe::endpoint.request") }}&nbsp;&nbsp;&nbsp;
         @if($metadata['try_it_out']['enabled'] ?? false)
             <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
