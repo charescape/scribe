@@ -65,7 +65,7 @@
         if (is_bool($example)) {
             $exampleAsString = $example ? "true" : "false";
         }
-        $description .= " Example: `$exampleAsString`";
+        $description .= " 示例值： `$exampleAsString`";
     }
 @endphp
 {!! Parsedown::instance()->text(trim($description)) !!}
