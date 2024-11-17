@@ -27,7 +27,7 @@ curl --request {{$endpoint->httpMethods[0]}} \
 @if ($endpoint->headers['Content-Type'] == 'application/x-www-form-urlencoded')
     --data "{!! http_build_query($endpoint->cleanBodyParameters, '', '&') !!}"
 @else
-    --data "{!! addslashes(json_encode($endpoint->cleanBodyParameters, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT)) !!}"
+    --data '{!! json_encode($endpoint->cleanBodyParameters, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT) !!}'
 @endif
 @endif
 

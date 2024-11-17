@@ -40,7 +40,7 @@ body.append('{!! $key !!}', document.querySelector('input[name="{!! $key !!}"]')
 @if ($endpoint->headers['Content-Type'] == 'application/x-www-form-urlencoded')
 let body = "{!! http_build_query($endpoint->cleanBodyParameters, '', '&') !!}";
 @else
-let body = {!! json_encode($endpoint->cleanBodyParameters, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE) !!};
+let body = {!! json_encode($endpoint->cleanBodyParameters, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT) !!};
 @endif
 @endif
 

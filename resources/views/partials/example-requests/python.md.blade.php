@@ -24,7 +24,7 @@ files = {
 }
 @endif
 @if(count($endpoint->cleanBodyParameters))
-payload = {!! json_encode($endpoint->cleanBodyParameters, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE) !!}
+payload = {!! json_encode($endpoint->cleanBodyParameters, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT) !!}
 @endif
 @if(count($endpoint->cleanQueryParameters))
 params = {!! u::printQueryParamsAsKeyValue($endpoint->cleanQueryParameters, "'", ":", 2, "{}") !!}
