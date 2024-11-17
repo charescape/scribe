@@ -705,7 +705,6 @@ html {
     padding: 0 28px;
     box-sizing: border-box;
     display: block;
-    text-shadow: 0 1px 0 #fff
 }
 
 .content>ol,
@@ -845,24 +844,20 @@ html {
     background: #292929;
     line-height: 1.6;
     color: #c8c8c8;
-    text-shadow: none;
 }
 
 .content aside.info {
     background: #8fbcd4;
-    text-shadow: 0 1px 0 #a0c6da;
     color: initial;
 }
 
 .content aside.warning {
     background-color: #c97a7e;
-    text-shadow: 0 1px 0 #d18e91;
     color: initial;
 }
 
 .content aside.success {
     background-color: #6ac174;
-    text-shadow: 0 1px 0 #80ca89;
     color: initial;
 }
 
@@ -877,7 +872,6 @@ html {
     margin: -2px;
     border-radius: 4px;
     border: 1px solid #f7e633;
-    text-shadow: 1px 1px 0 #666;
     background: linear-gradient(to top left, #f7e633, #f1d32f)
 }
 
@@ -891,7 +885,6 @@ html {
     float: right;
     clear: right;
     box-sizing: border-box;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .4)
 }
 
 .content blockquote pre.sf-dump,
@@ -908,7 +901,6 @@ html {
     float: right;
     clear: right;
     box-sizing: border-box;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .4)
 }
 
 .content .annotation pre {
@@ -1013,7 +1005,6 @@ html {
     -moz-border-radius: 9px;
     border-radius: 9px;
     color: #ffffff;
-    text-shadow: none !important;
     font-weight: bold;
 }
 
