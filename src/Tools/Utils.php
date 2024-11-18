@@ -376,7 +376,7 @@ class Utils
         $translation = trans($key, $replace);
 
         if ($translation === $key || $translation === null) {
-            $translation = trans($key, $replace, 'en');
+            $translation = trans($key, $replace, 'zh');
         }
 
 
