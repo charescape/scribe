@@ -793,7 +793,7 @@ trait ParsesValidationRules
         }
 
         $translationString = "validation.{$rule}";
-        $description = trans($translationString);
+        $description = trans($translationString, locale: 'zh');
 
         // For rules that can apply to multiple types (eg 'max' rule), There is an array of possible messages
         // 'numeric' => 'The :attribute must not be greater than :max'
@@ -802,7 +802,7 @@ trait ParsesValidationRules
         // and will need to be called with the baseType appended.
         if ($description === $translationString) {
             $translationString = "{$translationString}.{$baseType}";
-            $translated = trans($translationString);
+            $translated = trans($translationString, locale: 'zh');
             if ($translated !== $translationString) {
                 $description = $translated;
             }
