@@ -3,7 +3,7 @@
 @endphp
 <b style="line-height: 2;"><code>{{ $name }}</code></b>&nbsp;&nbsp;
 @if($type)<small>{{ $type }}</small>@endif&nbsp;
-@if($isInput && !$required)<i>optional</i>@endif &nbsp;
+@if($isInput && !$required)<i>可选</i>@endif &nbsp;
 @if($isInput && empty($hasChildren))
     @php
         $isList = Str::endsWith($type, '[]');
@@ -70,6 +70,6 @@
 @endphp
 {!! Parsedown::instance()->text(trim($description)) !!}
 @if(!empty($enumValues))
-Must be one of:
+必须是以下值之一：
 <ul style="list-style-type: square;">{!! implode(" ", array_map(fn($val) => "<li><code>$val</code></li>", $enumValues)) !!}</ul>
 @endif
