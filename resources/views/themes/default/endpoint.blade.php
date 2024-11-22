@@ -94,7 +94,7 @@
     @foreach($endpoint->httpMethods as $method)
         <p>
             @component('scribe::components.badges.http-method', ['method' => $method])@endcomponent
-            <b><code>{{$endpoint->uri}}</code></b>
+            <code>{{$endpoint->uri}}</code>
         </p>
     @endforeach
     @if(count($endpoint->headers))
