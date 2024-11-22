@@ -71,5 +71,5 @@
 {!! Parsedown::instance()->text(trim($description)) !!}
 @if(!empty($enumValues))
 必须是以下值之一：
-<ul style="list-style-type: square;">{!! implode(" ", array_map(fn($val) => "<li><code>$val</code></li>", $enumValues)) !!}</ul>
+<ul style="margin-top: 5px;">{!! implode(" ", array_map(fn($val) => "<li><code>$val</code></li>", $enumValues)) !!}</ul>
 @endif
