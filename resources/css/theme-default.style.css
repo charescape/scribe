@@ -1024,12 +1024,24 @@ html {
     background-color: blue;
 }
 
+.badge.badge-lightblue {
+    background-color: lightblue;
+}
+
+.badge.badge-cyan {
+    background-color: cyan;
+}
+
 .badge.badge-darkblue {
     background-color: darkblue;
 }
 
 .badge.badge-green {
     background-color: green;
+}
+
+.badge.badge-lightgreen {
+    background-color: lightgreen;
 }
 
 .badge.badge-darkgreen {

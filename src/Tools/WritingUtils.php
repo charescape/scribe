@@ -9,10 +9,10 @@ class WritingUtils
 {
     public static array $httpMethodToCssColour = [
         'GET' => 'green',
-        'HEAD' => 'darkgreen',
-        'POST' => 'black',
-        'PUT' => 'darkblue',
-        'PATCH' => 'purple',
+        'HEAD' => 'lightgreen',
+        'POST' => 'blue',
+        'PUT' => 'cyan',
+        'PATCH' => 'lightblue',
         'DELETE' => 'red',
         'OPTIONS' => 'grey',
     ];
