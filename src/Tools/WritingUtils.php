@@ -11,7 +11,7 @@ class WritingUtils
         'GET' => 'green',
         'HEAD' => 'lightgreen',
         'POST' => 'blue',
-        'PUT' => 'cyan',
+        'PUT' => 'darkcyan',
         'PATCH' => 'lightblue',
         'DELETE' => 'red',
         'OPTIONS' => 'grey',
