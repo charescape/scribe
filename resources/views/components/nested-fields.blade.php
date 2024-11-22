@@ -17,7 +17,7 @@
                             :fields="[$subfieldName => $subfield]" :endpointId="$endpointId" :isInput="$isInput" :level="$level + 2"
                     />
                 @else
-                    <div style="margin-left: {{ ($level + 2) * 14 }}px; clear: unset;">
+                    <div style="margin-left: {{ ($level + 2) * 28 }}px; clear: unset;">
                         @component('scribe::components.field-details', [
                           'name' => $subfieldName,
                           'fullName' => $subfield['name'],
@@ -36,7 +36,7 @@
                 @endif
             @endforeach
     @elseif(!empty($field['__fields']))
-        <div style="@if($level) margin-left: {{ $level * 14 }}px;@else padding-left: 28px; @endif clear: unset;">
+        <div style="@if($level) margin-left: {{ $level * 28 }}px;@else padding-left: 28px; @endif clear: unset;">
         <details>
             <summary style="padding-bottom: 10px;">
                 @component('scribe::components.field-details', [
@@ -60,7 +60,7 @@
                             :fields="[$subfieldName => $subfield]" :endpointId="$endpointId" :isInput="$isInput" :level="$level + 1"
                     />
                 @else
-                    <div style="margin-left: {{ ($level + 1) * 14 }}px; clear: unset;">
+                    <div style="margin-left: {{ ($level + 1) * 28 }}px; clear: unset;">
                         @component('scribe::components.field-details', [
                           'name' => $subfieldName,
                           'fullName' => $subfield['name'],
@@ -81,7 +81,7 @@
         </details>
         </div>
     @else
-        <div style="@if($level) margin-left: {{ ($level + 1) * 14 }}px;@else padding-left: 28px; @endif clear: unset;">
+        <div style="@if($level) margin-left: {{ ($level + 1) * 28 }}px;@else padding-left: 28px; @endif clear: unset;">
             @component('scribe::components.field-details', [
               'name' => $name,
               'fullName' => $field['name'],
